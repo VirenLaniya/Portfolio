@@ -1,0 +1,134 @@
+@media (max-width: 700px) {
+
+    :root {
+        /* Colors */
+        --primary-clr      : #0087ff;
+    }
+
+    * {
+        font-size: 10px;
+    }
+
+    header{
+        height: 30vh;
+    }
+
+    .nav-container {
+        height: 60px;
+    }
+
+    /* Hamburger menu */
+    #toggle-menu {
+        width    : 30px;
+        height   : 30px;
+        /* margin: 30px 0 20px 20px; */
+        z-index  : 2;
+    }
+
+    .bar {
+        height          : 7px;
+        width           : 100%;
+        background-color: #ffffff;
+        display         : block;
+        border-radius   : 5px;
+        transition      : 0.3s ease;
+    }
+
+    #bar1 {
+        transform: translateY(-5px);
+    }
+
+    #bar3 {
+        bottom   : 0;
+        transform: translateY(5px);
+    }
+
+    .nav-links-container {
+        padding         : 0;
+        top             : 0;
+        right           : -20rem;
+        width           : 20rem;
+        background-color: var(--primary-clr);
+        position        : absolute;
+        height          : 100vh;
+        transition      : 0.5s;
+    }
+
+    .nav-links-list {
+        flex-direction : column;
+        justify-content: center;
+    }
+
+    .nav-links-list::before {
+        display: block;
+        content: '';
+        height : 60px;
+    }
+
+    .change .bar {
+        background-color: #ff0000;
+    }
+
+    .change #bar1 {
+        transform: translateY(5px) rotateZ(-45deg);
+    }
+
+    .change #bar3 {
+        transform: translateY(-8px) rotate(45deg);
+    }
+
+    .change #bar2 {
+        opacity: 0;
+    }
+
+    .forToggle {
+        right: 0;
+    }
+
+    /* active link */
+    #active {
+        font-weight: bold;
+        color      : #ffffff;
+    }
+
+    .nav-links-list .active::after {
+        width           : 100%;
+        background-color: #ffffff;
+    }
+
+    .view-my-work{
+        background-color: var(--primary-clr);
+    }
+
+    /****** Footer ******/
+
+    #footer-container{
+        flex-direction: column;
+    }
+    
+    .foot-container-1{
+        margin-bottom: 10px;
+    }
+
+    #foot-navigate-link-container{
+        width: 100%;
+    }
+
+    .foot-navlink-list .foot-navlink-item{
+        list-style-type: none;
+        padding: 5px 10px;
+        display: inline-block;
+    }
+
+    .foot-contact{
+        display: inline-block;
+    }
+
+    #foot-follow-on{
+        width: 100%;
+    }
+    .foot-followlinks-container{
+        justify-content: space-evenly;
+    }
+    
+}

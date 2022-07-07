@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
+
+:root {
+    /* Colors */
+    --primary-clr      : #0087ff;
+    --header-footer-clr: #000000df;
+    --main-bg-clr-1    : #f4f3f3;
+    --main-bg-clr-2    : #ffffff;
+    --card-bg-clr-1    : #ffffff;
+    --card-bg-clr-2    : #c8e5ff;
+    /* footer */
+    --foot-content-clr : #a8a8a8;
+}
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+/*********** Main ***********/
+main {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    padding: 3rem;
+}
+
+/****** Title ******/
+.title {
+    font-size  : 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    width      : fit-content;
+    margin     : auto;
+    padding    : 0 0 2.1rem 0;
+}
+
+.title:after {
+    display         : block;
+    content         : '';
+    width           : 100%;
+    height          : 3px;
+    background-color: var(--primary-clr);
+    border-radius   : 20px;
+}
+
+.title::first-letter {
+    color: var(--primary-clr);
+}
+
+.title-description {
+    text-align: center;
+    font-size : 1.1rem;
+    padding   : 0 0 2rem 0;
+}
+
+/* card container */
+.card-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+
+.activity-git-repo-container{
+    background-color: var(--main-bg-clr-1);
+}
+
+.activity-design-container{
+    background-color: var(--main-bg-clr-2);
+}
+
+/* Card */
+.card {
+    position        : relative;
+    border-radius   : 10px;
+    box-shadow      : 0 0 5px grey;
+    width           : 19rem;
+    height          : 19rem;
+    background-color: var(--card-bg-clr-2);
+    font-family     : 'Montserrat', sans-serif;
+    overflow        : hidden;
+}
+
+.card-layer { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 136, 255, 0.7);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.card:hover img{
+    width: 110%;
+    height: 110%;
+}
+
+.card:hover .card-layer{
+    opacity: 1;
+}
+
+.card-layer p{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.card:hover .card-layer p{
+    bottom: 50%;
+    transform: translateY(50%);
+    visibility: visible;
+}

@@ -1,0 +1,38 @@
+@media(max-width:700px) {
+
+    /*********** Main ***********/
+
+    /* about container */
+    .about-me-container{
+        flex-direction: column;
+    }
+    .about-me-img{
+        width: 100%;
+        height: 20rem;
+        margin: 0 0 1.5rem 0;
+    }
+    .about-me-content{
+        border-left: none;
+        border-top: 0.2rem solid var(--primary-clr);
+    }
+
+    /* Technical skills */
+    .tech-skills {
+        grid-template-columns: auto;
+    }
+
+    /* Testimonials */
+    .testimonial-entity-card{
+        flex-direction: column;
+    }
+    .testimonial-feedback-info{
+        padding: 0;
+    }
+    #test-2-2{
+        display: none;
+    }
+    #test-2-1{
+        display: block;
+    }
+
+}

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
+
+:root {
+    /* Colors */
+    --primary-clr      : #0087ff;
+    --header-footer-clr: #000000df;
+    --main-bg-clr-1    : #f4f3f3;
+    --main-bg-clr-2    : #ffffff;
+    --card-bg-clr-1    : #ffffff;
+    --card-bg-clr-2    : #c8e5ff;
+    /* footer */
+    --foot-content-clr : #a8a8a8;
+}
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+/*********** Header ***********/
+header {
+    background-image   : linear-gradient(#000000d4, #000000c0, #00000098), url('/res/images/otherImages/contact.jpg');
+}
+
+/*********** Main ***********/
+main{
+    font-family: 'Montserrat',sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: safe;
+}
+
+.contact-query-container{
+    flex-grow: 2;
+    padding: 3rem;
+}
+
+/****** Title ******/
+.title {
+    font-size  : 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    width      : fit-content;
+    margin     : auto;
+    padding    : 0 0 2.1rem 0;
+}
+
+.title:after {
+    display         : block;
+    content         : '';
+    width           : 100%;
+    height          : 3px;
+    background-color: var(--primary-clr);
+    border-radius   : 20px;
+}
+
+.title::first-letter {
+    color: var(--primary-clr);
+}
+
+.title-description{
+    text-align: justify;
+    font-size: 1.1rem;
+    padding: 0 0 2rem 0;
+}
+
+/* Form container */
+.form-container{
+    margin: auto;
+    padding: 2rem;
+    width: 85%;
+    height: 22rem;
+    border-radius: 2rem;
+    background-color: var(--card-bg-clr-2);
+}
+
+.form-container form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact-query-email{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    padding: 0.5rem;
+    width: 92%;
+    outline: none;
+    font-size: 0.9rem;
+    border: 0.1rem solid var(--foot-content-clr);
+    border-radius: 0.5rem;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.contact-query-field{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+textarea{
+    padding: 0.5rem;
+    max-width: 92%;
+    min-width: 92%;
+    max-height: 10rem;
+    min-height: 10rem;
+    outline: none;
+    font-size: 0.9rem;
+    border: 0.1rem solid var(--foot-content-clr);
+    border-radius: 0.5rem;
+    font-family: 'Montserrat',sans-serif;
+}
+
+input:focus, textarea:focus{
+    border: 0.1rem solid var(--primary-clr);
+    background-color: var(--main-bg-clr-1);
+}
+
+.submit-reset-btn-container{
+    padding: 1rem 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.submit-btn, .reset-btn{
+    padding: 0.5rem 3rem;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.submit-btn{
+    border: 0.1rem solid var(--primary-clr);
+    color: #ffffff;
+    background-color: var(--primary-clr);
+    /* border: none; */
+}
+
+.reset-btn{
+    border: 0.1rem solid var(--primary-clr);
+    background-color: transparent;
+}
+
+.submit-btn:hover{
+    transition: 0.25s;
+    background-color: #0075ff;
+}
+
+.reset-btn:hover{
+    transition: 0.25s;
+    color: #ffffff;
+    background-color: var(--primary-clr);
+}
+
+/* Contact direct */
+.contact-direct-container{
+    box-sizing: border-box;
+    width: 35%;
+    padding: 3rem;
+    background-color: var(--foot-content-clr);
+    background-color: var(--main-bg-clr-1);
+}
+
+.contact-item{
+    font-size: 1rem;
+    margin: 1.5rem 0;
+}
+
+.contact-item-type{
+    color:var(--primary-clr);
+    font-weight:600;
+}
+
+.contact-item-info a{
+    color: #7a7a7a;
+}
+
+.contact-item-info a:hover{
+    color:#000000;
+}
+
+.google-map-location{
+    width: 100%;
+    height: 13rem;
+}
+

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Viren Laniya</title>
+    <link rel="stylesheet" href="/styles/header-footer.css">
+    <link rel="stylesheet" href="/styles/responsive-head-foot.css">
+    <link rel="stylesheet" href="/styles/projects.css">
+    <link rel="stylesheet" href="/styles/responsive-projects.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <a id="logo-container-link" href="/about.html">
+                <div class="logo-container">VL</div>
+            </a>
+            <div id="toggle-menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <div class="nav-links-container">
+                <ul class="nav-links-list">
+                    <li class="nav-link-item"><a href="/index.html">Home</a></li>
+                    <li class="nav-link-item"><a href="/about.html">About</a></li>
+                    <li class="nav-link-item"><a href="/activities.html">Activities</a></li>
+                    <li class="nav-link-item"><a href="/blog.html">Blog</a></li>
+                    <li class="nav-link-item active"><a id="active" href="/projects.html">Projects</a></li>
+                    <li class="nav-link-item"><a href="/contact.html">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="introduction-container">
+            <div class="page-title">MY PROJECTS</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="projects-container">
+            <div class="project">
+                <div class="title">Chat App</div>
+                <div class="title-description">In this Project I make simple chat web application in which multiple
+                    users can chat with each other.</div>
+                <div class="project-card-container">
+                    <div class="project-card">
+                        <div class="title-card">
+                            <img src="/res/images/indexImages/frontEnd.png" alt="Img">
+                            <h3 class="title-of-card">FrontEnd</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-item">HTML</div>
+                            <div class="content-item">CSS</div>
+                            <div class="content-item">JavaScript</div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="title-card">
+                            <img src="/res/images/indexImages/backEnd.png" alt="Img">
+                            <h3 class="title-of-card">BackEnd</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-item">Node JS</div>
+                            <div class="content-item">Express JS</div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="title-card">
+                            <img src="/res/images/projectsImages/databases.png" alt="Img">
+                            <h3 class="title-of-card">Databases</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-item">MySQL</div>
+                            <div class="content-item">MongoDB</div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="title-card">
+                            <img src="/res/images/projectsImages/externalLibs.png" alt="Img">
+                            <h3 class="title-of-card">External Libs</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-item">Moment JS</div>
+                            <div class="content-item">Mustache JS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="title-description bold-underline-text">:: Source Code ::</div>
+
+        <div class="source-code-container">
+            <div class="html-code source-code">
+                <div class="title-description">HTML Code</div>
+                <div class="btn-container">
+                    <button id="index" class="file-select-btn html-file-btn">index.html</button>
+                    <button id="chat" class="file-select-btn html-file-btn">Chat.html</button>
+                </div>
+                <iframe allowtransparency="true" class="code-frame html-code-frame" src="/res/code/index.txt"></iframe>
+            </div>
+            <div class="css-code source-code">
+                <div class="title-description">CSS Code</div>
+                <div class="btn-container">
+                    <button id="styles" class="file-select-btn css-file-btn">styles.css</button>
+                    <button id="styles2" class="file-select-btn css-file-btn">styles.min.css</button>
+                </div>
+                <iframe allowtransparency="true" class="code-frame css-code-frame" src="/res/code/styles.txt"></iframe>
+            </div>
+            <div class="js-code source-code">
+                <div class="title-description">JS Code</div>
+                <div class="btn-container">
+                    <button id="indexjs" class="file-select-btn js-file-btn">index.js</button>
+                    <button id="chatjs" class="file-select-btn js-file-btn">chat.js</button>
+                    <button id="messages" class="file-select-btn js-file-btn">messages.js</button>
+                    <button id="users" class="file-select-btn js-file-btn">users.js</button>
+                </div>
+                <iframe allowtransparency="true" class="code-frame js-code-frame" src="/res/code/indexjs.txt"></iframe>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="footer-container">
+            <div id="foot-navigate-link-container" class="foot-container-1">
+                <div class="foot-title-1">Navigate</div>
+                <ul class="foot-navlink-list">
+                    <li class="foot-navlink-item"><a href="/index.html">Home</a></li>
+                    <li class="foot-navlink-item"><a href="/about.html">About</a></li>
+                    <li class="foot-navlink-item"><a href="/activities.html">Activities</a></li>
+                    <li class="foot-navlink-item"><a href="/blog.html">Blog</a></li>
+                    <li class="foot-navlink-item"><a href="/projects.html">Projects</a></li>
+                    <li class="foot-navlink-item"><a href="/contact.html">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div id="foot-contact-container" class="foot-container-1">
+                <div class="foot-title-1">Contact</div>
+                <div id="foot-my-address" class="contact-div">
+                    <div class="foot-contact"><span class="contact-logo"><img src="/res/images/footerIcons/map.png"
+                                alt="Address">&nbsp;</span>Address : </div>
+                    <address>AT-Ratanpar, TA & DIST - Botad, Gujarat, India, 364720.</address>
+                </div>
+                <div id="foot-email" class="contact-div">
+                    <div class="foot-contact"><span class="contact-logo"><img src="/res/images/footerIcons/email.png"
+                                alt="Mail">&nbsp;</span>Email : </div>
+                    <a href="mailto: virenpatel63513@gmail.com">virenpatel63513@gmail.com</a>
+                </div>
+                <div id="foot-phone" class="contact-div">
+                    <div class="foot-contact"><span class="contact-logo"><img src="/res/images/footerIcons/call.png"
+                                alt="Phone">&nbsp;</span>Phone : </div>
+                    <span>+91 9723548483</span>
+                </div>
+            </div>
+
+            <div id="foot-follow-on" class="foot-container-1">
+                <div class="foot-title-1">Follow on</div>
+                <div class="foot-followlinks-container">
+                    <div class="follow-link"><a href="https://www.facebook.com/viren.laniya.3"><img
+                                src="/res/images/footerIcons/facebook-logo.png" alt="FB"></a></div>
+                    <div class="follow-link"><a href="https://github.com/VirenLaniya"><img
+                                src="/res/images/footerIcons/github-logo.png" alt="GH"></a></div>
+                    <div class="follow-link"><a href="https://www.instagram.com/viren_patel_63513/"><img
+                                src="/res/images/footerIcons/instagram-logo.png" alt="IG"></a></div>
+                    <div class="follow-link"><a href="https://in.linkedin.com/in/viren-laniya"><img
+                                src="/res/images/footerIcons/linkedin-logo.png" alt="LI"></a></div>
+                    <div class="follow-link"><a href="https://twitter.com/VirenPatel97235"><img
+                                src="/res/images/footerIcons/twitter-logo.png" alt="Twit"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="separator-line"></div>
+        <div id="copyright-container">
+            All rights &#169; <span id="copyright-year"></span> are reserved.
+        </div>
+        <div class="separator-line"></div>
+    </footer>
+</body>
+
+<script src="/js/responsiveMenu.js"></script>
+<script src="/js/footer.js"></script>
+<script src="/js/projects.js"></script>
+
+</html>

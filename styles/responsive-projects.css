@@ -1,0 +1,47 @@
+@media(max-width:700px){
+
+    /*********** Main ***********/
+
+    /* Card container */
+    /* .project-card-container{
+        flex-direction: column;
+    } */
+
+    .project-card{
+        width: 14rem;
+        height: 14rem;
+        margin:2rem 0;
+    }
+
+    .title-card img{
+        width: 47.5%;
+        height: 47.5%;
+    }
+
+    .title-card{
+        top: 20%;
+        width: 65%;
+        height: 65%;
+        font-size: 0.9rem;
+    }
+
+    .card-content{
+        bottom: 0;
+        left:50%;
+        transform: translate(-50%,0);
+    }
+
+
+    /* source code container */
+    .source-code-container{
+        flex-direction: column;
+    }
+
+    .source-code{
+        width: 100%;
+        margin: 1rem 0;
+    }
+    
+
+
+}

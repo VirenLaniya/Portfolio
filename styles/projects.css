@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
+
+:root {
+    /* Colors */
+    --primary-clr      : #0087ff;
+    --header-footer-clr: #000000df;
+    --main-bg-clr-1    : #f4f3f3;
+    --main-bg-clr-2    : #ffffff;
+    --card-bg-clr-1    : #ffffff;
+    --card-bg-clr-2    : #c8e5ff;
+    /* footer */
+    --foot-content-clr : #a8a8a8;
+}
+
+/*********** header ***********/
+header{
+    z-index: 2;
+}
+
+/*********** Main ***********/
+main{
+    font-family:"Montserrat",sans-serif;
+}
+
+/****** Title ******/
+.title {
+    font-size  : 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    width      : fit-content;
+    margin     : auto;
+    padding    : 0 0 2.1rem 0;
+}
+
+.title:after {
+    display         : block;
+    content         : '';
+    width           : 100%;
+    height          : 3px;
+    background-color: var(--primary-clr);
+    border-radius   : 20px;
+}
+
+.title::first-letter {
+    color: var(--primary-clr);
+}
+
+.title-description{
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0 0 2rem 0;
+}
+
+.bold-underline-text{
+    font-weight: 550;
+    text-decoration: underline;
+}
+
+/*** Card container ***/
+.project{
+    padding: 3rem;
+}
+
+.project-card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+/* Card */
+.project-card{
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 2rem;
+    border: 0.2rem solid var(--card-bg-clr-2);
+    box-shadow: 0 0 0.5rem var(--foot-content-clr);
+    background-color: var(--main-bg-clr-1);
+    transition: 0.5s;
+}
+
+.title-card{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    width: 75%;
+    height: 75%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem var(--card-bg-clr-2);
+    background-color: var(--card-bg-clr-2);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.title-card img{
+    width: 50%;
+    height: 50%;
+    transition: 0.5s;
+}
+
+.project-card:hover > .title-card img{
+    width: 47.5%;
+    height: 47.5%;
+}
+.project-card:hover > .title-card{
+    top: 20%;
+    width: 65%;
+    height: 65%;
+    font-size: 0.9rem;
+}
+
+.card-content{
+    position: absolute;
+    width: 100%;
+    height:43%;
+    bottom:50%;
+    left:50%;
+    transform: translate(-50%,50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    z-index: 0.95;
+    transition: 0.5s;
+}
+
+.project-card:hover > .card-content{
+    bottom: 0;
+    left:50%;
+    transform: translate(-50%,0);
+}
+
+.project-card:hover{
+    box-shadow: 0 0 0.5rem var(--card-bg-clr-2);
+}
+
+/*** Source code container ***/
+.source-code-container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.source-code{
+    width: 32%;
+}
+
+.code-frame{
+    display: block;
+    width: 100%;
+    height: 20rem;
+    box-shadow: 0 0 0.5rem var(--foot-content-clr);
+    border: 0.1rem solid var(--primary-clr);
+    border-radius: 0 0 0.5rem 0.5rem;
+    overflow: scroll;
+}
+
+.file-select-btn{
+    font-family: 'Montserrat',sans-serif;
+    cursor:pointer;
+    font-size: 0.75rem;
+    font-weight: 500;
+    height: 2rem;
+    background-color:#dddddd;
+    /* border: 0.1rem solid var(--primary-clr); */
+    border: none;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0 0.2rem;
+}
